@@ -18,14 +18,14 @@ public class MarkdownParse {
                 break;
             }
 
-            if(nextOpenBracket > 0) {
+            /*if(nextOpenBracket > 0) {
                 System.out.println(markdown.charAt(nextOpenBracket));
                 if(markdown.charAt(nextOpenBracket - 1) == '!') {
                     currentIndex = nextOpenBracket + 1;
                     System.out.println("Exclamation mark detected");
                     continue;
                 }
-            }
+            }*/
 
             int markdownCheck = nextCloseBracket + 1;
             if(markdown.charAt(markdownCheck) == ('(')) {
